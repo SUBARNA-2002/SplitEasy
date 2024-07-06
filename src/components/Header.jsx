@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
@@ -5,13 +6,14 @@ const Header = () => {
   return (
     <View style={styles.container}>
       <View>
-        <Text style={styles.subtitle}>Hello, Subanra✌️</Text>
+        <Text style={styles.subtitle}>Hello, Subarna✌️</Text>
         <Text style={styles.title}>Split your bill</Text>
       </View>
       <View>
         <Image
-          height={100}
-          width={100}
+          height={60}
+          width={60}
+          borderRadius={30}
           source={{
             uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2RoW-A0vGk7dSIh82fKozeYTuw-pJNdmxHDUfiuaU10nZzyVJjXvtc6KEEo8TpbP6Frc&usqp=CAU',
           }}
@@ -27,16 +29,17 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 10,
-    backgroundColor: 'white',
+    paddingBottom: 20,
+    alignItems: 'center',
   },
   title: {
-    fontSize: 20,
+    fontSize: 35,
     fontWeight: 'bold',
-    color: 'black',
+    color: '#ADB0B9',
+    paddingTop: 5,
   },
   subtitle: {
-    fontSize: 16,
-    color: 'gray',
+    fontSize: 20,
+    color: '#ADB0B9',
   },
 });
