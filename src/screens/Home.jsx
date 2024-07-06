@@ -3,8 +3,29 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Header from '../components/Header';
 import {colors} from '../constants/color';
+import ListItem from '../components/ListItem';
 
 const Home = () => {
+  const listData = [
+    {
+      hotelName: 'The Grand',
+      totalAmount: 200,
+      date: '12/12/2021',
+      people: 4,
+    },
+    {
+      hotelName: 'Burger King',
+      totalAmount: 100,
+      date: '12/12/2021',
+      people: 2,
+    },
+    {
+      hotelName: 'Subway',
+      totalAmount: 150,
+      date: '12/12/2021',
+      people: 3,
+    },
+  ];
   return (
     <View style={styles.container}>
       <View style={styles.header_container}>
@@ -19,6 +40,17 @@ const Home = () => {
       <View style={styles.listHeader}>
         <Text style={styles.listLeft}>Recents bills</Text>
         <Text style={styles.listRight}>see all</Text>
+      </View>
+      <View>
+        {listData.map((item, index) => (
+          <ListItem
+            key={index}
+            hotelName={item.hotelName}
+            date={item.date}
+            toalAmount={item.totalAmount}
+            totalPerson={item.people}
+          />
+        ))}
       </View>
     </View>
   );
