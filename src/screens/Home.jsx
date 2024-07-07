@@ -4,6 +4,7 @@ import React from 'react';
 import Header from '../components/Header';
 import {colors} from '../constants/color';
 import ListItem from '../components/ListItem';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Home = () => {
   const listData = [
