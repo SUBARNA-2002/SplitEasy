@@ -13,7 +13,7 @@ import BottomSheet, {
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 const Home = () => {
   const bottomSheetRef = useRef(null);
-  const snapPoints = useMemo(() => [1, '34%'], []); // Updated to use percentage for the second snap point
+  const snapPoints = useMemo(() => ['1%', '34%'], []); // Updated to use percentage for the second snap point
 
   const listData = [
     {
@@ -93,7 +93,8 @@ const Home = () => {
         index={0}
         snapPoints={snapPoints}
         onChange={handleSheetChanges}
-        backdropComponent={renderBackdrop}>
+        backdropComponent={renderBackdrop}
+        enablePanDownToClose>
         {/* Updated to use handleSheetChanges */}
         <BottomSheetView style={styles.contentContainer}>
           <TouchableOpacity
