@@ -11,8 +11,10 @@ import BottomSheet, {
   BottomSheetView,
 } from '@gorhom/bottom-sheet';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
 const Home = () => {
   const bottomSheetRef = useRef(null);
+  const navigate = useNavigation();
   const snapPoints = useMemo(() => ['1%', '34%'], []); // Updated to use percentage for the second snap point
 
   const listData = [
@@ -90,7 +92,7 @@ const Home = () => {
       </View>
       <BottomSheet
         ref={bottomSheetRef}
-        index={0}
+        index={-1}
         snapPoints={snapPoints}
         onChange={handleSheetChanges}
         backdropComponent={renderBackdrop}
@@ -98,6 +100,7 @@ const Home = () => {
         {/* Updated to use handleSheetChanges */}
         <BottomSheetView style={styles.contentContainer}>
           <TouchableOpacity
+            onPress={() => navigate.navigate('Camera')}
             style={{
               flexDirection: 'row',
               justifyContent: 'space-between',
