@@ -152,7 +152,8 @@ const Home = () => {
               </Text>
             </View>
           </View>
-          <View
+          <TouchableOpacity
+          onPress={() => navigate.navigate('CreateBill')}
             style={{
               flexDirection: 'row',
               justifyContent: 'space-between',
@@ -160,7 +161,7 @@ const Home = () => {
               padding: 10,
               paddingHorizontal: 20,
             }}>
-            <View style={{flexDirection: 'row', gap: 20, alignItems: 'center'}}>
+            <View style={{flexDirection: 'row', gap: 20, alignItems: 'center'}} >
               <View
                 style={{
                   padding: 10,
@@ -177,7 +178,7 @@ const Home = () => {
                 Create bill
               </Text>
             </View>
-          </View>
+          </TouchableOpacity>
         </BottomSheetView>
       </BottomSheet>
     </View>

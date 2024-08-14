@@ -9,6 +9,7 @@ import History from '../screens/History';
 import Profile from '../screens/Profile';
 import {colors} from '../constants/color';
 import CameraScreen from '../screens/Camera';
+import CreateBill from '../screens/CreateBill';
 
 // Custom label component that displays icon and label horizontally
 const CustomTabLabel = ({focused, color, iconName, label}) => (
@@ -105,7 +106,7 @@ const AppNavigation = () => {
       }}>
       <Stack.Screen name="TabLayout" component={TabLayout} />
       <Stack.Screen name="Camera" component={CameraScreen} />
-      {/* <Stack.Screen name="Profile" component={Profile} /> */}
+      <Stack.Screen name="CreateBill" component={CreateBill} />
     </Stack.Navigator>
   );
 };

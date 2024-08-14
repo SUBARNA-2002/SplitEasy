@@ -1347,6 +1347,11 @@
     prompts "^2.4.2"
     semver "^7.5.2"
 
+"@react-native-ml-kit/text-recognition@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.npmjs.org/@react-native-ml-kit/text-recognition/-/text-recognition-1.5.1.tgz"
+  integrity sha512-UO13SPfTPG44UrE4k9jXZBLXYAizXg9spDiAzUnMQMKOHUCuY6sTnm7YNI7pUrR1HXQ72L5dpCeXU+d0QK8/rQ==
+
 "@react-native/assets-registry@0.74.85":
   version "0.74.85"
 
@@ -4428,6 +4433,11 @@ react-native-gesture-handler@^2.17.1, react-native-gesture-handler@>=1.10.1:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-image-picker@^7.1.2:
+  version "7.1.2"
+  resolved "https://registry.npmjs.org/react-native-image-picker/-/react-native-image-picker-7.1.2.tgz"
+  integrity sha512-b5y5nP60RIPxlAXlptn2QwlIuZWCUDWa/YPUVjgHc0Ih60mRiOg1PSzf0IjHSLeOZShCpirpvSPGnDExIpTRUg==
+
 react-native-reanimated@*, react-native-reanimated@^3.13.0, react-native-reanimated@>=2.2.0:
   version "3.13.0"
   resolved "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.13.0.tgz"
@@ -4468,7 +4478,7 @@ react-native-vision-camera@^4.4.1:
   resolved "https://registry.npmjs.org/react-native-vision-camera/-/react-native-vision-camera-4.4.1.tgz"
   integrity sha512-pWuO+AMwQzMoZ85pOHv4P4G1kPdYGA1QAC26rtGfVBbjZt5UyEpYRTirzRhetkQ7meaBjHIWEE/5Qmo0VockHA==
 
-react-native@*, react-native@0.74.3:
+react-native@*, "react-native@>=0.60.0-rc.0 <1.0.x", react-native@0.74.3:
   version "0.74.3"
   dependencies:
     "@jest/create-cache-key-function" "^29.6.3"
@@ -4525,7 +4535,7 @@ react-test-renderer@18.2.0:
     react-shallow-renderer "^16.15.0"
     scheduler "^0.23.0"
 
-react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, react@>=16.8, react@>=17.0.0, react@18.2.0:
+react@*, "react@^16.0.0 || ^17.0.0 || ^18.0.0", react@^18.2.0, react@>=16.8, react@>=16.8.1, react@>=17.0.0, react@18.2.0:
   version "18.2.0"
   dependencies:
     loose-envify "^1.1.0"
