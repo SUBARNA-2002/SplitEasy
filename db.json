@@ -1,0 +1,81 @@
+{
+  "friend": [
+    {
+      "id": 1,
+      "name": "Subarna",
+      "phone": 9841234567
+    },
+    {
+      "id": 2,
+      "name": "Sujan",
+      "phone": 9841234567
+    },
+    {
+      "id": 3,
+      "name": "Suman",
+      "phone": 9841234567
+    },
+    {
+      "id": 4,
+      "name": "Sanjana",
+      "phone": 9841234567
+    },
+    {
+      "id": 5,
+      "name": "Ramesh",
+      "phone": 9841234568
+    },
+    {
+      "id": 6,
+      "name": "Hari",
+      "phone": 9841234569
+    },
+    {
+      "id": 7,
+      "name": "Gita",
+      "phone": 9841234570
+    },
+    {
+      "id": 8,
+      "name": "Sita",
+      "phone": 9841234571
+    },
+    {
+      "id": 9,
+      "name": "Ram",
+      "phone": 9841234572
+    },
+    {
+      "id": 10,
+      "name": "Shyam",
+      "phone": 9841234573
+    },
+    {
+      "id": 11,
+      "name": "Bina",
+      "phone": 9841234574
+    },
+    {
+      "id": 12,
+      "name": "Mina",
+      "phone": 9841234575
+    },
+    {
+      "id": 13,
+      "name": "Laxmi",
+      "phone": 9841234576
+    },
+    {
+      "id": 14,
+      "name": "Krishna",
+      "phone": 9841234577
+    }
+  ],
+  "groups": [
+    {
+      "id": "a7ae",
+      "groupName": "New Group",
+      "members": [1, 2, 3, 4, 5]
+    }
+  ]
+}

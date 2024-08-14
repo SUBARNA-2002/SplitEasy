@@ -7,13 +7,15 @@ import Icon from 'react-native-vector-icons/dist/Entypo';
 import Icon1 from 'react-native-vector-icons/dist/FontAwesome';
 import {TouchableOpacity} from '@gorhom/bottom-sheet';
 import TopHeader from '../components/TopHeader';
+import {useRoute} from '@react-navigation/native';
 
 const CreateBill = () => {
   return (
-    <View style={{
+    <View
+      style={{
         flex: 1,
-    }}>
-      <TopHeader />
+      }}>
+      <TopHeader title={'Create Bill'} />
       <View
         style={{
           flex: 1,
@@ -50,11 +52,12 @@ const CreateBill = () => {
                 style={{
                   borderBottomWidth: 1,
                   borderBottomColor: colors.primaryBackground,
-                  color: colors.textParimary,
+                  color: 'white',
                   width: 200,
                   fontSize: 20,
                 }}
                 placeholder="Enter Description"
+                placeholderTextColor={colors.textParimary}
               />
             </View>
           </View>
@@ -84,6 +87,7 @@ const CreateBill = () => {
                 }}
                 placeholder="0.00"
                 keyboardType="numeric"
+                placeholderTextColor={colors.textParimary}
               />
             </View>
           </View>

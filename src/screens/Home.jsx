@@ -153,7 +153,7 @@ const Home = () => {
             </View>
           </View>
           <TouchableOpacity
-          onPress={() => navigate.navigate('CreateBill')}
+          onPress={() => navigate.navigate('AddFriend')}
             style={{
               flexDirection: 'row',
               justifyContent: 'space-between',
