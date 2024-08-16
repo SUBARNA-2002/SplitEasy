@@ -9,7 +9,7 @@ import axios from 'axios';
 
 const Groups = () => {
   const [groupData, setGroupData] = useState([]);
-  
+
   const getGroupData = async () => {
     try {
       const res = await axios.get('http://localhost:8080/groups');
@@ -45,7 +45,17 @@ const Groups = () => {
             marginBottom: 20,
           }}
         />
-        <View></View>
+        <View
+          style={{
+            backgroundColor: colors.primaryBackground,
+            position: 'absolute',
+            bottom: 20,
+            right: 20,
+            padding: 10,
+            borderRadius: 50,
+          }}>
+          <Text>Add Group</Text>
+        </View>
       </View>
     </View>
   );
